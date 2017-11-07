@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
+
+/* Desktop Styles */
+body {
+	background: #212121;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Bree Serif', serif;
+	font-size: 60px; 
+	margin-top: 100px;
+}
+
+footer {
+	padding: 20px 0;
+	font-size: larger;
+}
+
+/* Navigation Main Styles */
+nav {
+	background-color: #AA898A;
+}
+
+/* Removing margin, pading and list styles from nav ul */
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+}
+
+nav ul li {
+	display: inline-block; 
+}
+
+nav a {
+	display: block; 
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+	padding: 14px 20px;
+}
+
+nav a:hover {
+	background-color: #212121;
+}
+
+/* Responsive Styles with CSS media query*/
+@media all and (max-width: 768px){
+
+h1 {
+	font-size: 20px; 
+	margin-top: 0px;
+}
+
+footer {
+	display: none;
+}
+	
+nav ul li {
+	display: list-item;
+	text-align: center;
+}	
+/* End media query */
+}
+
+
+
+
