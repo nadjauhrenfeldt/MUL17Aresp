@@ -11,7 +11,8 @@
   <h1>The Oldtimer Shop</h1>
 </header>
 <!-- Start main navigation -->
-<nav>
+<button onclick="myFunction()">Toggle Menu</button>
+<nav id="myNav">
   <ul>
     <li><a href="#" target="_self">Home</a></li>
     <li><a href="#" target="_self">Volkswagen</a>
@@ -29,6 +30,15 @@
   </ul>
 </nav>
 <!-- Main content here -->
-<footer>Copyright &copy; 2017 The Oldtimer Shop</footer>
+<footer>
+	<p>Copyright &copy; 2017 The Oldtimer Shop</p>
+</footer>
+<script>
+	function myFunction (){
+		var element = document.getElementById("myNav");
+		
+		element.classList.toggle("myStyle");
+	}
+</script>
 </body>
 </html>
