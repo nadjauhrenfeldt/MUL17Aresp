@@ -50,12 +50,26 @@ nav a:hover {
 	background-color: #212121;
 }
 
+/* Dropdown menu styles */
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+/* Display dropdowns on hover */
+nav ul li:hover > ul {
+	display: inherit;
+	background-color: #AA898A;
+	width: 150px; 
+}
+
 /* Responsive Styles with CSS media query*/
 @media all and (max-width: 768px){
 
 h1 {
-	font-size: 20px; 
+	font-size: large; 
 	margin-top: 0px;
+	text-align: center;
 }
 
 footer {
@@ -63,11 +77,12 @@ footer {
 }
 	
 nav ul li {
-	display: list-item;
 	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid white;
 }	
 /* End media query */
-}
+} 
 
 
 
