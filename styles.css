@@ -63,6 +63,10 @@ nav ul li:hover > ul {
 	width: 150px; 
 }
 
+nav ul ul li {
+	display: block;
+}
+
 /* Responsive Styles with CSS media query*/
 @media all and (max-width: 768px){
 
@@ -81,6 +85,13 @@ nav ul li {
 	width: 100%;
 	border-bottom: 1px solid white;
 }	
+/* Responsive dropdown styles */
+nav ul li:hover > ul {
+	/*display: inherit;*/
+	position: static;
+	background-color: #BB898A;
+	width: 100%; 
+}
 /* End media query */
 } 
 
