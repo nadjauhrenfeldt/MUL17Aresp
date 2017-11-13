@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
 
 /* Desktop Styles */
@@ -109,7 +109,3 @@ nav ul li:hover > ul {
 }
 /* End media query */
 } 
-
-
-
-
