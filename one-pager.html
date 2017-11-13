@@ -8,6 +8,8 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!-- Loading jQuery plugin (https://github.com/flesler/jquery.scrollTo) -->
 <script type="text/javascript" src="scripts/jquery.scrollTo.min.js"></script>
+<!-- Loading jQuery fartscroll plugin -->	
+<script src="http://code.onion.com/fartscroll.js"></script>
 <!-- Embedded JavaScript -->
 <script type="text/javascript">
 	// The famous document.ready function, takes an anonymous function as argument
@@ -22,6 +24,8 @@
 			$(window).scrollTo(this.hash, 1000);
 			
 		});
+		
+		fartscroll();
 		
 	// -> End document ready	
 	});
