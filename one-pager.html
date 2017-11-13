@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <title>How jQuery works</title>
 <!-- Loading jQuery from server -->
-	<link  rel="stylesheet" type="text/css" href="styles/styles.css"> 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
-</script>
+<link  rel="stylesheet" type="text/css" href="styles/styles.css"> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Loading jQuery plugin (https://github.com/flesler/jquery.scrollTo) -->
+<script type="text/javascript" src="scripts/jquery.scrollTo.min.js"></script>
 <!-- Embedded JavaScript -->
 <script type="text/javascript">
 	// The famous document.ready function, takes an anonymous function as argument
@@ -14,6 +15,15 @@
 		// All JavaScript codes goes here:
 		$("#jsterror").click(myFunction);
 		
+		// Implementing the scrollTo plugin
+		
+		$("#stickynav a").click(function(e){
+			e.preventDefault();
+			$(window).scrollTo(this.hash, 1000);
+			
+		});
+		
+	// -> End document ready	
 	});
 	
 	// A custom function
