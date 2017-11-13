@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>How jQuery works</title>
+</head>
+
+<body>
+	<button id="jsterror">Take me to jQuery!</button>
+	<script type="text/javascript">
+	function myFunction(){
+	// A statement, closed with semicolon
+	// Standars function alert, taking arguments type string (plain text) 
+	// alert("BUUUH!");
+	// Opening a new page in a tab
+	window.open("https://jquery.com", "_blank");
+	}
+	document.getElementById("jsterror").addEventListener("click", myFunction);
+</script>
+</body>	
+</html>
