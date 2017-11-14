@@ -92,3 +92,51 @@ section:nth-child(4) {
 section:nth-child(5) {
     background-color: wheat;
 }
+
+/* Responsive Styles with CSS media query */
+@media all and (max-width : 768px) {
+/* navigation bar */
+#jsterror {
+		display: none;
+	}
+	
+#stickynav {
+    height: auto;
+    position: fixed;
+    padding: 0px;
+    /* for the "tabbed" impression :-) */
+    overflow: visible;
+}
+
+#stickynav a {
+	text-align: center;
+	border-bottom: 1px solid grey;
+    top: 0px;
+    margin-right: 0px;
+	width: inherit;
+    padding: 5px 7px;
+    background: white;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* page structure */
+section {
+    padding-top: 135px;
+    overflow: visible;
+}
+	
+h1 {
+	marign-top: 0px;
+	font-size: larger;
+	text-align: left;
+}
+	
+h2 {
+	marign-top: 0px;
+	font-size: large;
+	text-align: left;
+}
+/* End og media query */
+}
