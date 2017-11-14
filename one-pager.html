@@ -28,6 +28,15 @@
 		
 		//fartscroll();
 		
+		jQuery('#myGallery').skdslider({
+
+		'delay':5000, // Delay duration between two slides in micro seconds.
+		'fadeSpeed': 2000, // Fading Speed in micro seconds.
+		'showNav': true, // It will show/hide navigation icon.
+		'numericNav': false // If true, navigation will be numeric
+
+});
+		
 	// -> End document ready	
 	});
 	
@@ -42,6 +51,8 @@
 	// Classic JavaScript:
 	// document.getElementById("jsterror").addEventListener("click", myFunction);
 </script>
+<script src="src/skdslider.js"></script>
+<link href="src/skdslider.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,6 +67,52 @@
 <section id="home">
 	<h1>A brilliant one pager!</h1>
 	<h2>My splendid portfolio</h2>
+	<!-- The slideshow (https://www.jqueryscript.net/slider/Responsive-Full-Width-jQuery-Image-Slider-Plugin-skdslider.html) -->
+  <div id="myGallery" class="skdslider">
+		<ul>
+		<li> <img src="slides/1.jpg" alt="Billede 1">
+			<div class="slide-desc">
+				<h2><a href="https://www.jqueryscript.net/slider/">Slider</a> Title 1</h2>
+				<p>Description 1.</p>
+		</div>
+		</li>
+			
+		<li><img src="slides/2.jpg" alt="Billede 2">
+			<div class="slide-desc">
+				<h2>Slider Title 2</h2>
+				<p>Description 2.</p>
+		</div>
+		</li>
+		
+		<li><img src="slides/3.jpg" alt="Billede 3">
+			<div class="slide-desc">
+				<h2>Slider Title 2</h2>
+				<p>Description 2.</p>
+		</div>
+		</li>
+			
+		<li><img src="slides/4.jpg" alt="Billede 4">
+			<div class="slide-desc">
+				<h2>Slider Title 2</h2>
+				<p>Description 2.</p>
+		</div>
+		</li>
+			
+		<li><img src="slides/5.jpg" alt="Billede 5">
+			<div class="slide-desc">
+				<h2>Slider Title 2</h2>
+				<p>Description 2.</p>
+		</div>
+		</li>
+			
+		<li><img src="slides/6.jpg" alt="Billede 6">
+			<div class="slide-desc">
+				<h2>Slider Title 2</h2>
+				<p>Description 2.</p>
+			</div>
+		</li>
+		</ul>
+		</div>
 </section>
 <section id="about"><h2>About me (the most important person in my life)!</h2></section>
 <section id="projects"><h2>My super duper projects</h2></section>
